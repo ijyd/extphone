@@ -1,10 +1,10 @@
 {
   "name": "extphone",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve  --host 192.168.60.128 --port 14200",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -23,6 +23,7 @@
     "@angular/router": "^4.0.0",
     "core-js": "^2.4.1",
     "rxjs": "^5.1.0",
+    "tssip": "0.0.1",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
