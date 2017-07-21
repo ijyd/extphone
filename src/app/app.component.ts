@@ -8,7 +8,7 @@ import { SIPRegService } from './sip/sipreg.service.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'extphone';
   constructor(private sipreg: SIPRegService) { }
 
 
