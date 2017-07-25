@@ -19,7 +19,7 @@
     },
     "installed_plugins": {
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.ijyd.extphone"
+            "PACKAGE_NAME": "com.jyd.extphone"
         }
     },
     "dependent_plugins": {},
