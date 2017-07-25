@@ -3,7 +3,8 @@
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
-    "declaration": false,
+    "declaration": true,
+    "module": "es2015",
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -15,6 +16,8 @@
       "es2016",
       "dom"
     ]
-    //"types": ["vue-typescript-import-dts"]
-  }
+  },
+  "exclude": [
+    "node_modules"
+  ]
 }

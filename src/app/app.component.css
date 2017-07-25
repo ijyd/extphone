@@ -10,18 +10,29 @@ body {
 
 .status {
   position: absolute;
-  left: 40%;
+  left: 42%;
+  text-align: center;
+  width: 280px;
+  height: 40px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-radius: 25px 25px 25px 25px;
+  -moz-border-radius: 25px 25px 25px 25px;
+  -webkit-border-radius: 25px 25px 25px 25px;
+  border: 1px solid #E8E8E8;
+  padding-top: 5px;
 }
 
 .navline {
   position: absolute;
-  width: 400px;
-  height: 70px;
-  left: 35%;
-  top: 50%;
+  left: 40%;
+  top: 45%;
   text-align: center;
   font-size: 26px;
   /* margin: 100px 15px 0px 100px; */
+  width: 280px;
+  height: 70px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;

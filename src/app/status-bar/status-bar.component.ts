@@ -10,6 +10,6 @@ export class StatusBarComponent {
 
   constructor() { }
 
-  private status = 'Registration failed';
-  private title = 'extphone';
+  status = 'Registration failed';
+  title = 'extphone';
 }
