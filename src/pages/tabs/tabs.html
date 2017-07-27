@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar class="tabtoolbar">
+    <ion-title>extphone</ion-title>
+    <ion-fab top right>
+      <button right mini ion-fab icon-only (click)="presentPopover($event)">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-fab>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-tabs>
+  <ion-tab [root]="tabDial" tabTitle="WeDial" tabIcon="keypad"></ion-tab>
+  <ion-tab [root]="tabChat" tabTitle="WeChat" tabIcon="chatbubbles"></ion-tab>
+  <ion-tab [root]="tabContacts" tabTitle="Contacts" tabIcon="contacts"></ion-tab>
+  <ion-tab [root]="tabMe" tabTitle="Me" tabIcon="person"></ion-tab>
+</ion-tabs>
