@@ -1,19 +1,31 @@
 import { Component } from '@angular/core';
+import { PopoverController } from "ionic-angular";
 
-import { AboutPage } from '../about/about';
-import { ContactPage } from '../contact/contact';
-import { HomePage } from '../home/home';
+
+import { MePage } from '../me/me';
+import { ContactsPage } from '../contacts/contacts';
+import { DialPage } from '../dial/dial';
+import { ChatPage } from '../chat/chat';
+import { PopoverPage } from '../popover/popover';
 
 @Component({
-  templateUrl: 'tabs.html'
+  templateUrl: 'tabs.html',
+  selector: 'entry-page',
 })
 export class TabsPage {
 
-  tab1Root = HomePage;
-  tab2Root = AboutPage;
-  tab3Root = ContactPage;
+  tabDial = DialPage;
+  tabChat = ChatPage;
+  tabContacts = ContactsPage;
+  tabMe = MePage;
 
-  constructor() {
+  constructor(public popoverCtrl: PopoverController) {
+  }
 
+  presentPopover(myEvent) {
+    let popover = this.popoverCtrl.create(PopoverPage);
+    popover.present({
+      ev: myEvent
+    });
   }
 }
